@@ -1,154 +1,208 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva tu Asesoría Estratégica</title>
-    <!-- Tailwind CSS (CDN for fast prototyping without build step) -->
+    <title>Captación Estructurada | Sistemas Predecibles</title>
+
+    <!-- Google Fonts: Inter for a clean, corporate look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
                     colors: {
-                        primary: '#0f172a', // slate-900
-                        accent: '#3b82f6', // blue-500
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                        }
                     }
                 }
             }
         }
     </script>
+
     <!-- Meta Pixel Code Placeholder -->
     <script>
-        // !-- INSIDERS YOUR META PIXEL ID HERE --
-        /*
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', 'YOUR_PIXEL_ID');
-        fbq('track', 'PageView');
-        */
+        // fbq('init', 'YOUR_PIXEL_ID');
     </script>
-    <!-- End Meta Pixel Code -->
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-accent selection:text-white">
 
-    <!-- Header / Nav (Minimal) -->
-    <header class="w-full py-6 px-4 md:px-8 border-b border-gray-200 bg-white">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div class="font-bold text-2xl tracking-tighter text-primary">Brand<span class="text-accent">Logo</span></div>
-            <a href="#calendly-section" class="text-sm font-medium hover:text-accent transition-colors">Agendar Llamada</a>
+<body
+    class="bg-gray-50 text-slate-900 font-sans antialiased leading-relaxed selection:bg-slate-300 selection:text-slate-900">
+
+    <!-- Header -->
+    <header class="w-full py-6 px-6 md:px-12 bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-semibold text-xl tracking-tight text-slate-900">
+                Estructura<span class="text-slate-500 font-normal">Comercial</span>
+            </div>
+            <a href="#agendar" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                Agendar Consultoría
+            </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="max-w-6xl mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12">
-        <div class="flex-1 space-y-8 text-center md:text-left">
-            <div class="inline-block px-3 py-1 bg-blue-100 text-accent rounded-full text-sm font-semibold tracking-wide">
-                Asesoría Exclusiva
+    <section class="max-w-5xl mx-auto px-6 py-24 md:py-32 flex flex-col items-center text-center">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight mb-6 max-w-4xl">
+            Sistemas predecibles para generar <br class="hidden md:block" /> oportunidades calificadas.
+        </h1>
+        <p class="text-lg md:text-xl text-slate-600 max-w-2xl mb-12">
+            Deje atrás el esfuerzo sin métricas y el estancamiento operativo. Implementamos procesos claros,
+            estructurados y medibles para la captación de clientes.
+        </p>
+        <a href="#agendar"
+            class="inline-flex items-center justify-center px-8 py-4 bg-slate-900 text-white text-base font-medium rounded-md hover:bg-slate-800 transition-colors shadow-sm cursor-pointer">
+            Agendar evaluación inicial
+        </a>
+    </section>
+
+    <!-- Contrast Section (El Problema) -->
+    <section class="bg-slate-900 text-white py-24">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-semibold mb-6 tracking-tight">El problema no es la falta de esfuerzo, es la
+                    falta de orden.</h2>
+                <p class="text-slate-300 text-lg mb-6">
+                    Operar basándose en el volumen desorganizado genera desgaste. Contactos que no responden,
+                    seguimiento ineficiente y resultados que fluctúan mes a mes.
+                </p>
+                <p class="text-slate-300 text-lg">
+                    El crecimiento sostenible no se logra aumentando la presión, sino estableciendo un sistema sólido y
+                    auditable.
+                </p>
             </div>
-            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-primary">
-                Escala tu negocio con <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">sistemas probados</span>.
-            </h1>
-            <p class="text-xl text-slate-600 max-w-2xl mx-auto md:mx-0">
-                Agenda una llamada estratégica de 30 minutos donde analizaremos tu situación actual y crearemos un plan de acción a medida para aumentar tus ventas.
-            </p>
-            <div class="pt-4">
-                <a href="#calendly-section" class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-lg font-semibold rounded-lg hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-lg cursor-pointer">
-                    Agendar Llamada Ahora
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </a>
+            <div class="bg-slate-800/50 p-8 rounded-lg border border-slate-700">
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-slate-500 mr-3 shrink-0" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                        Estrategias basadas en volumen sin filtro.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-slate-500 mr-3 shrink-0" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                        Incapacidad para proyectar ventas el próximo trimestre.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-slate-500 mr-3 shrink-0" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                        Dependencia excesiva en referidos o el esfuerzo personal del fundador.
+                    </li>
+                </ul>
             </div>
-            <div class="flex items-center justify-center md:justify-start gap-4 pt-6 opacity-75">
-                <div class="flex -space-x-4">
-                    <!-- Replace with real avatars -->
-                    <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
-                    <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-400"></div>
-                    <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-500"></div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-semibold text-slate-900 tracking-tight">Nuestro Método</h2>
+                <p class="mt-4 text-lg text-slate-600">Un enfoque estructurado, sin promesas vacías.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="text-sm font-bold text-slate-400 mb-2">FASE 01</div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Auditoría y Orden</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Analizamos su flujo actual, identificamos cuellos de botella y reestructuramos el proceso para
+                        priorizar la calidad sobre la cantidad.
+                    </p>
                 </div>
-                <div class="text-sm text-slate-600 font-medium">+50 emprendedores ya agendasron</div>
-            </div>
-        </div>
-        
-        <!-- Video Placeholder / Image -->
-        <div class="flex-1 w-full bg-white rounded-2xl shadow-2xl overflow-hidden aspect-video border border-gray-100 flex items-center justify-center relative group cursor-pointer">
-            <div class="absolute inset-0 bg-gradient-to-tr from-slate-800/20 to-transparent"></div>
-            <!-- Play Button Icon -->
-            <div class="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-accent ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-            </div>
-            <p class="absolute bottom-4 left-4 text-sm font-semibold text-white truncate px-2 py-1 bg-black/50 rounded">Ver video de presentación (2:30)</p>
-        </div>
-    </section>
-
-    <!-- Social Proof / Logos -->
-    <section class="border-y border-gray-200 bg-white py-12">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p class="text-sm font-semibold text-slate-500 uppercase tracking-widest mb-8">Confiado por empresas innovadoras</p>
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-                <!-- Logos placeholders -->
-                <div class="text-2xl font-black">Empresa A</div>
-                <div class="text-2xl font-black">STARTUP</div>
-                <div class="text-2xl font-black">Inc.</div>
-                <div class="text-2xl font-black">BrandX</div>
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="text-sm font-bold text-slate-400 mb-2">FASE 02</div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Implementación</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Desplegamos sistemas de captación predecibles. Infraestructura técnica, segmentación precisa y
+                        puntos de contacto profesionales.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+                    <div class="text-sm font-bold text-slate-400 mb-2">FASE 03</div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Estabilidad Operativa</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Establecemos métricas de seguimiento (KPIs) para asegurar un flujo constante de oportunidades,
+                        permitiendo proyecciones fiables.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Calendly Section -->
-    <section id="calendly-section" class="py-24 bg-slate-50">
-        <div class="max-w-4xl mx-auto px-4 text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Elige tu horario ideal</h2>
-            <p class="text-lg text-slate-600">Selecciona el día y la hora que mejor te convenga para nuestra llamada gratuita. No hay compromiso.</p>
+    <!-- Calendly / CTA Section -->
+    <section id="agendar" class="py-24 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 text-center mb-12">
+            <h2 class="text-3xl font-semibold text-slate-900 mb-4 tracking-tight">Evaluación de Viabilidad</h2>
+            <p class="text-lg text-slate-600">
+                Seleccione un horario en el calendario debajo. El objetivo de esta llamada es analizar su estructura
+                actual y determinar si nuestro proceso puede aportar orden y crecimiento a su negocio.
+            </p>
         </div>
-        
-        <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 min-h-[700px]">
+
+        <div
+            class="max-w-4xl mx-auto bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden min-h-[700px]">
             <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_LINK_HERE?hide_gdpr_banner=1&primary_color=3b82f6" style="min-width:320px;height:700px;"></div>
+            <div class="calendly-inline-widget"
+                data-url="https://calendly.com/YOUR_CALENDLY_LINK_HERE?hide_gdpr_banner=1&primary_color=0f172a"
+                style="min-width:320px;height:700px;"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             <!-- Calendly inline widget end -->
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-primary text-slate-400 py-12 text-center text-sm border-t border-slate-800">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col items-center gap-4">
-            <div class="font-bold text-xl tracking-tighter text-white">Brand<span class="text-accent">Logo</span></div>
-            <p>&copy; 2026 Todos los derechos reservados.</p>
-            <div class="flex gap-4 mt-2">
-                <a href="#" class="hover:text-white transition-colors">Términos y Condiciones</a>
-                <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
+    <footer class="bg-slate-50 py-12 border-t border-gray-200">
+        <div
+            class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+            <div>
+                &copy; 2026 Estructura Comercial. Todos los derechos reservados.
+            </div>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-slate-900 transition-colors">Términos Legales</a>
+                <a href="#" class="hover:text-slate-900 transition-colors">Privacidad</a>
             </div>
         </div>
     </footer>
 
     <!-- Custom Script for Tracking Calendly Events -->
     <script>
-        // Esta función escucha los eventos que emite el iFrame de Calendly
         function isCalendlyEvent(e) {
             return e.data.event && e.data.event.indexOf('calendly') === 0;
         }
 
-        window.addEventListener('message', function(e) {
+        window.addEventListener('message', function (e) {
             if (isCalendlyEvent(e)) {
-                // El evento que nos importa es cuando confirman qué día y hora eligieron
-                // https://developer.calendly.com/api-docs/d7755e2f9e5fe-calendly-dev-tools
                 if (e.data.event === 'calendly.event_scheduled') {
-                    console.log('✅ Evento agendado en Calendly!', e.data.payload);
-                    
-                    // Aquí es donde disparas tu tag de Conversion de Facebook Pixel:
+                    console.log('✅ Evento agendado en Calendly. Disparando trackings...', e.data.payload);
                     // fbq('track', 'Schedule');
-                    
-                    // Opcionalmente, puedes redirigir a una página de gracias:
-                    // window.location.href = '/gracias.html';
                 }
             }
         });
     </script>
 </body>
+
 </html>
